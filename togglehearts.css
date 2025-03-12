@@ -1,0 +1,16 @@
+#heart-checkbox-1,
+label {
+  display: none;
+}
+
+label::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  cursor: pointer;
+  font-size: 3em;
+}
+#heart-checkbox-1:checked + label::before {
+  font-weight: 700;
+  color: red;
+}
